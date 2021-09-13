@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar css starts here */
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    width: 55%;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #ffaf00;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    transform: translate(-50% -50%);
+    box-shadow: 0 0px 9px rgb(0 0 0 / 16%);
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    display: inline-flex;
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px 25px ;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #5e707d;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.nav-list li a.active,
+.nav-list li a:hover{
+    color: #da2268;
+    transition: .9sec;
+}
+.nav-list li a::after{
+    content: '';
+    display: flex;
+    width: 0%;
+    height: 1px;
+    background-color: #da2268;
+    transition: width .3;
+}
+.nav-list li a:hover::after{
+    width: 100%;
+    transition: width .4s;
+}
+.right-nav{
+    width: 50%;
+    text-align: right;
+    
+}
+.right-nav li{
+    list-style: none;
+    padding: 26px 20px;
+}
+.right-nav li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    display: grid;
+    background-color: white;
+    height: 35px;
+    width: 100px;
+    margin: auto;
+    place-items: center;
+    border: 2px solid #bb02ff;
+    border-radius: 30px;
+    color: #bb02ff;
+}
+.right-nav li a:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #bb02ff;
+}
+
+/* Navbar css ends here */
+
+/* Cards css starts here */
+
+.container{
+    height: 540px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.2);
+    background: #fff;
+    margin:20px;
+    overflow: hidden;
+    transition: .5s;
+  }
+  .container:hover .card{
+    transform: scale(1);
+    opacity: 1;
+  }
+  .container .card:hover{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .container .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(180px at center 0);
+     
+  }
+  .container .card .circle p{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+}
+.container .card .content{
+    position: absolute;
+    bottom: 10px;
+    page-break-after: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .content p{
+    color: #666;
+    text-align: center;
+    font-size: 20px;
+  }
+  .content a{
+    position: relative;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+  }    
+  .container .card:nth-child(1) .circle,
+  .container .card:nth-child(1) .content a{
+    background: #ffaf00;
+  }
+  .container .card:nth-child(2) .circle,
+  .container .card:nth-child(2) .content a{
+    background: #da2268;
+  }
+  .container .card:nth-child(3) .circle,
+  .container .card:nth-child(3) .content a{
+    background: #bb02ff;
+  }
+
+/* Cards css ends here   */
+
+/* About us css starts here */
+
+.container-2{
+    width: 50%;
+    height: 500px;
+
+}
+.image{
+    margin-top: 5px;
+}
+.about{
+    margin-top: -350px;
+    margin-left: 237px;
+    font-size: 20px;
+    color: rgb(0, 78, 0);
+}
+.description{
+    width: 50%;
+    height: 520px;
+    margin-top: -400px;
+    margin-left: 45%;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+/* About us css ends here */
+
+/* Quotation css starts here */
+
+.container-3{
+  width: 100vw;
+  height:625px;
+}
+.top{
+  width: 100vw;
+  height:313px;
+  background-color: rgba(142, 231, 142, 0.637);
+}
+.bottom{
+  width: 100vw;
+  height:312px;
+  background-color: rgb(248, 248, 248);
+}
+.quotation{
+  width: 60%;
+  height: 50%;
+  margin-top: -480px;
+  margin-left: 250px;
+  justify-content: center;
+  background-color: #fff;
+  clip-path: ellipse(49% 43% at 50% 50%);
+}
+.comas{
+  font-size: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+  padding-top: 70px;
+  padding-left: 240px;
+  color:rgb(12, 80, 12) ;
+}
+.thought{
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-top: 140px;
+  padding-left:80px ;
+  color: rgb(12, 80, 12);
+}
+
+/* Quotation css ends here */
+
+/* Footer css starts here */
+
+.main {
+  max-height: 550px;;
+  background-color: #292c2f;
+  color: white;
+  font-size: 38pt;
+  text-align: center;
+  line-height: 550px;
+ }
+ footer{
+  bottom: 0;
+ }
+ .footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  
+  padding: 55px 50px;
+  margin-top: 0px;
+ }
+  
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+ }
+  
+ .footer-distributed .footer-left{
+  width: 40%;
+ }
+  
+ .footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+ }
+  
+ .footer-distributed h3 span{
+  color:  #5383d3;
+ }
+  
+  
+ .footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+ }
+  
+ .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+ }
+  
+ .footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+  
+ .footer-distributed .footer-center{
+  width: 35%;
+ }
+  
+ .footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+ }
+  
+ .footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+ }
+  
+ .footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+ }
+  
+ .footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+ }
+  
+ .footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+ }
+  
+ .footer-distributed .footer-right{
+  width: 20%;
+ }
+  
+ .footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+ .footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+ }
+  
+ .footer-distributed .footer-icons{
+  margin-top: 25px;
+ }
+  
+ .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  
+  margin-right: 3px;
+  margin-bottom: 5px;
+ }
+  
+  
+ @media (max-width: 880px) {
+  
+  .footer-distributed{
+  font: bold 14px sans-serif;
+  
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  }
+  
+  .footer-distributed .footer-center i{
+  margin-left: 0;
+  }
+  .main {
+  line-height: normal;
+  font-size: auto;
+  }
+  
+}
+/* Footer css ends here */
+

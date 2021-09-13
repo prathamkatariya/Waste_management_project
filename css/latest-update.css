@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    width: 55%;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #ffaf00;
+}
+.navbar{
+    display: flex;
+    background-color: white;
+    transform: translate(-50% -50%);
+    box-shadow: 0 0px 9px rgb(0 0 0 / 16%);
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    display: inline-flex;
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px 25px ;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #5e707d;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.nav-list li a:hover{
+    color: #da2268;
+    transition: .9sec;
+}
+.nav-list li a::after{
+    content: '';
+    display: flex;
+    width: 0%;
+    height: 1px;
+    background-color: #da2268;
+    transition: width .3;
+}
+.nav-list li a:hover::after{
+    width: 100%;
+    transition: width .4s;
+}
+.right-nav{
+    width: 50%;
+    text-align: right;
+    
+}
+.right-nav li{
+    list-style: none;
+    padding: 26px 20px;
+}
+.right-nav li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    display: grid;
+    background-color: white;
+    height: 35px;
+    width: 100px;
+    margin: auto;
+    place-items: center;
+    border: 2px solid #bb02ff;
+    border-radius: 30px;
+    color: #bb02ff;
+}
+.right-nav li a:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #bb02ff;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
